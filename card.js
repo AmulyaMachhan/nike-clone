@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", function(){
         return card;
     }
 
-    const left = document.createElement("button");
-    left.classList.add("left");  
-    
-    left.innerHTML = `<span>&gt;</span>`;
-    container.appendChild(left);
-
     const right = document.createElement("button");
     right.classList.add("right");  
     
-    right.innerHTML = `<span>&lt;</span>`;
+    right.innerHTML = `<span><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path></svg></span>`;
     container.appendChild(right);
+
+    const left = document.createElement("button");
+    left.classList.add("left");  
+    
+    left.innerHTML = `<span><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path></svg></span>`;
+    container.appendChild(left);
 
     let itemClassName = "iconic-items";
     let items = document.getElementsByClassName(itemClassName);

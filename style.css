@@ -294,6 +294,10 @@ main{
             border-radius: 20px;
             padding: 10px 20px;
             color: white;
+            cursor: pointer;
+        }
+        .card-buttons button:hover{
+            background-color: #767676;
         }
         /* Basic Card CSS ends */
 
@@ -364,7 +368,11 @@ main{
                     background-color: white;
                     color: black;
                     font-size: 1rem;
+                    cursor: pointer;
                 } 
+                .trending-items button:hover{
+                    background-color: #767676;
+                }
     /* Iconic Shoes CSS */
     .iconic-shoes-container{
         margin: 50px 0;
@@ -446,12 +454,10 @@ main{
         top: 50%;
         transform: translateY(-50%);
         border: none;
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
         background-color: white;
-        font-weight: 800;
-        font-size: 1.5rem;
         cursor: pointer;
     }
     .left{
@@ -476,39 +482,42 @@ main{
     .Shop-by-sports{
         margin: 20px 0;
     }
-    .container{
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        padding: 20px 0;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: thin;
-    }
-    .container::-webkit-scrollbar {
-        width: 20px;            
-    }     
-    .items{
-        min-width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .items-image{
-        max-width: 400px;
-    }
-    .items-image img{
-        width: 100%;
-        object-fit: cover;
-    }
-    .about-items h3{
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-    .link a{
-        color: black;
-        font-size: 1.1rem;
-    }
+        .container{
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin;
+        }
+        .container::-webkit-scrollbar {
+            width: 20px;            
+        }     
+            .items{
+                min-width: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+                .items-image{
+                    max-width: 400px;
+                }
+                    .items-image img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                .about-items h3{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                .link a{
+                    color: black;
+                    font-size: 1.1rem;
+                }
+                .link a:hover{
+                    color: #767676;
+                }
 
 
 /* footer css */
@@ -549,11 +558,15 @@ footer{
                         font-size: 0.7rem;
                         text-decoration: none;
                     }
+                    .footer-links:hover{
+                        color: white;
+                    }
                 .footer-socials{
                     display: flex;
                     justify-content: flex-end;
                     flex-wrap: wrap;
                     gap: 10px;
+                    cursor: pointer;
                 }
                     .social-link-icon{
                         fill: #6d6d6d;

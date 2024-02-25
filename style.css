@@ -321,6 +321,8 @@ main{
                 font-size: 1.2rem;
                 margin-top: 40px;
             }
+
+  
     .trending-container{
         margin: 20px 0;
     }
@@ -359,7 +361,6 @@ main{
                     font-size: 1.5rem;
                     font-weight: 700;
                 }
-
                 .trending-items button{
                     width: 100px;
                     padding: 10px 20px;
@@ -372,7 +373,8 @@ main{
                 } 
                 .trending-items button:hover{
                     background-color: #767676;
-                }
+                } 
+
     /* Iconic Shoes CSS */
     .iconic-shoes-container{
         margin: 50px 0;
@@ -392,7 +394,7 @@ main{
             gap: 10px;
             z-index: -1;
             transition: opacity 0.2s;
-            }
+        }
             .iconic-items h3{
                 padding: 20px 0;
                 font-size: 0.9rem;
@@ -488,12 +490,12 @@ main{
             overflow-x: auto;
             padding: 20px 0;
             -webkit-overflow-scrolling: touch;
-            scroll-snap-type: x mandatory;
+             scroll-snap-type: x mandatory;
             scrollbar-width: thin;
         }
         .container::-webkit-scrollbar {
             width: 20px;            
-        }     
+        }    
             .items{
                 min-width: 400px;
                 display: flex;
@@ -518,7 +520,68 @@ main{
                 .link a:hover{
                     color: #767676;
                 }
+    .member-container{
+        margin: 20px 0;
+    }
+    .member-content{
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+    }
+    .container::-webkit-scrollbar {
+        width: 20px;            
+    }
+        .member-items{
+            min-width: 300px;
+            min-height: 400px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+            .background-image{
+                height: 100%;
+                position: absolute;
+                top: 0;
+                z-index: -1;        
+            }
+                .background-image img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            .member-about{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }    
+                .member-about h3{
 
+                    font-weight: 700;
+                }
+                .member-about p{
+                    font-size: 1.5rem;
+                }   
+
+                .member-items button{
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: white;
+                    color: black;
+                    font-size: 1rem;
+                    cursor: pointer;
+                } 
+                .member-items button:hover{
+                    background-color: #767676;
+                }
 
 /* footer css */
 footer{
